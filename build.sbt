@@ -37,8 +37,8 @@ assemblyMergeStrategy in assembly := {
 
 enablePlugins(BuildInfoPlugin)
 buildInfoKeys := Seq[BuildInfoKey](
-  name, 
-  version, 
+  name,
+  version,
   scalaVersion,
   sbtVersion,
   "githash" -> git.gitHeadCommit.value.getOrElse("")
